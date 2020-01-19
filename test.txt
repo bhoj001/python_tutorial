@@ -1,0 +1,18 @@
+What is python?
+Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum in 1991 and is heavily focused on code readability.
+Advantages of python:
+1. Easy syntax: It has easy syntax which is similar to plain English. It can be easily learned by novice programmer or any person in any profession.
+2. Readability: Python codes are easy to read and maintain.
+3. High level language: It is high level language with boosts productivity when developing application.
+4. Object oriented programming: It supports object orient programming, which can be used to model real world concepts.
+5. It's open source: One of the advantage of using python is it's open source and you can modify python according to your need(if you need to).
+6. Cross platform: Python programs can run in different platform. You can run your application in Linux and run it in windows.
+7. Wide support and bigger community: Python has support for various packages and it has a large development community which ensures that the language adapts to modern standard.
+Disadvantages:
+Python language has following disadvantage and it's always a good idea to know what it is good at and what it is not.
+1. Speed: Compared to other language like C and C++ python is slower in performance.
+2. Memory consumption: Python is not suitable for memory intensive task. It provides a lot of
+
+
+
+
