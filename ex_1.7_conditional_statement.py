@@ -1,3 +1,7 @@
+'''
+Author: Bhoj bahadur karki
+Purpose: Conditional statements
+'''
 x = 2
 if (x==2): 
     print(x)
@@ -10,6 +14,3 @@ if x ==2:
     print(x)
 else:
     print("Not 2")
-'''
-
-'''

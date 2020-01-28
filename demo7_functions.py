@@ -57,6 +57,20 @@ print(math.floor(2.6)) # lower value
 print(math.floor(2.6)) # lower value
 print("floor=",math.floor(2)) # lower value
 # print(type(math.ceil(2.4)))
+# calculating absolute value(i.e. whether value is negative or positive it return positive value) in python
+# in case of complex number it return magnitude of the value
+print("abs() for real number for -4.5 = ",abs(-4.5))
+print("abs() for real number for 5 = ",abs(5))
+# below value will be same
+print("abs() for complex number for -3+5j= ",abs(-3+5j))
+print("abs() for complex number for 3+5j= ",abs(3+5j))
+print("magnitude of 3+5j= ",math.sqrt((3**2)+(5**2)))
+
+# Rounding value using round()
+print("round(3.0)=",round(3.0))
+print("round(3.4)=",round(3.4))
+print("round(3.5)=",round(3.5))
+print("round(3.6)=",round(3.6))
 
 
 # math.sin.__doc__
