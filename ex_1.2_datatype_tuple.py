@@ -44,7 +44,7 @@ print("t4=",type(t4),t4)
 print("t5=",type(t5),t5)
 
 
-a,b = 200,300  # Note tuple but multiple variable in single line
+a,b = 200,300  # Not tuple but multiple variable in single line
 print(a,b)
 
 

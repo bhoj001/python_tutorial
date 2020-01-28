@@ -1,20 +1,22 @@
 
 """
-Exercise 1:
+Exercise 1: using loops
 1. Create a fibonachi sequence using python for n values i.e 
 input = maximum value 
 output= sequence
 e.g. 0, 1 , 1, 2, 3, 5, 
 """
-def fib(n):
 
+
+'''
+def fib(n):
     a, b = 0, 1
     while a < n:
         print(a, end=' ')
         a, b = b, a+b
     print()
 fib(1000)
-
+'''
 # """
 
 '''
@@ -32,7 +34,8 @@ Expected Output:
 
 '''
 Exercise 3: input from keyboard(user input)
-Write a Python program to that takes three numbers(x,y,z) as input and print the output of 
+Write a Python program to that takes three numbers(x,y,z) as input and print 
+the output of 
 1. (x+y).z and 
 2. x.y + y.z. 
 
@@ -44,7 +47,8 @@ Enter third number - 7
 
 '''
 Exercise 4: input from keyboard
-Write a Python program that takes the radius of a circle as input and calculate 
+Write a Python program that takes the radius of a circle as input 
+and calculate 
 the perimeter and area of the circle.
 
 Test Data
@@ -65,7 +69,8 @@ Congratulation! You are eligible for casting your vote
 '''
 '''
 Exercise 6: Loops
-Write a Python program to find the sum of first 10 natural numbers. Go to the editor
+Write a Python program to find the sum of first 10 natural numbers. 
+Go to the editor
 Expected Output :
 The first 10 natural number is :
 1 2 3 4 5 6 7 8 9 10
@@ -107,6 +112,21 @@ def arr_duplicate(ar):
                     break 
     return count
 
+# Second method
+
+def arr_dup(ar):
+    count = 0
+    x = set(ar)
+    for item in x:
+        if ar.count(item)>1:
+            count += 1
+    return count
+
+a = [2,2,3,3,3,3,4,5]
+print("count = ",arr_dup(a))
+
+
+
 # a = [2,2,3,3,3,3,4,5]
 # print("count = ",arr_duplicate(a))
 
@@ -133,3 +153,18 @@ Please input a string : This is a test string.
 Expected Output :
 "This is a test string." contains 4 spaces
 '''
+
+"""
+4. Write a Python program to reverse a string. Go to the editor
+Sample String : "1234abcd"
+Expected Output : "dcba4321"
+"""
+
+def string_reverse(str1):
+    rstr1 = ''
+    index = len(str1)
+    while index > 0:
+        rstr1 += str1[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))

@@ -29,6 +29,13 @@ print(x)
 
 # x.clear() # AttributeError: 'frozenset' object has no attribute 'clear'
 
+# iteriating
+for item in x:
+    print(item)
+
+del x # removing frozenset
+
+
 # -----Methods supported by set but not frozenset-------
 '''
 The following table lists operations available for set that do not apply to immutable instances 

@@ -56,17 +56,17 @@ print("ceil=",math.ceil(2.001)) # upper value i.e. 3
 print(math.floor(2.6)) # lower value
 print(math.floor(2.6)) # lower value
 print("floor=",math.floor(2)) # lower value
-print(type(math.ceil(2.4)))
+# print(type(math.ceil(2.4)))
 
 
 # math.sin.__doc__
-print(math.sin.__doc__)
+# print(math.sin.__doc__)
 
 # input value is in radian 
 #  so we have to convert degree into radius as math.radian
 print("from degree to radian =", math.radians(30))
-print("sin(30)=",math.sin(90)) # here we mean 90 radian
-print("sin(30)=",math.sin(math.radians(90))) # here we mean 90 radian
+print("sin(30)=",math.sin(30)) # here we mean 90 radian
+print("sin(30)=",math.sin(math.radians(30))) # here we mean 90 radian
 
 # root 2
 print("sqrt=",math.sqrt(2))
