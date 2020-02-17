@@ -42,4 +42,10 @@ print("Here is the calendar:")
 print(cal)
 
 # c2 = calendar.February # gives number january = 1, feburary = 2 and so on 
-# print(c2)
+
+# printing annual calander in 3 columns
+# docs: https://www.wikipython.com/modules/407-2/
+import calendar
+year = 2020
+c=calendar.TextCalendar()
+c.pryear(year)

@@ -127,4 +127,4 @@ with open('human.txt',mode="r",encoding='utf-8') as f:
 # This should work perfectly fine
 f = open("human.txt","r")
 print(f.readline()) # reads single line
-f.close()
+f.c-lose()

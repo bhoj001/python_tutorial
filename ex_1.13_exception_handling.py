@@ -100,7 +100,7 @@ Syntax:
 # Example1: Simple file io exception
 try:
    f = open("testfile.txt", "r+") # Here I have opened in read write mode
-   f.write("This is my test file for exception handling!!")
+   f.write("exception handling!!")
 except IOError:
    print("Error: can\'t find file or read data")
 else:
@@ -112,6 +112,8 @@ try:
     x = 5/0
 except Exception as e:
     print(e)
+finally:
+   print("finally block")
     # raise e # This will raise error message 
     # print("after raise this line is not printed")
 
@@ -136,8 +138,8 @@ finally:
 def temp_convert(var):
    try:
       return int(var)
-   except(ValueError, Argument):
-      print("The argument does not contain numbers\n", Argument)
+   except ValueError:
+      print("The argument does not contain numbers: ", ValueError)
 
 # Call above function here.
 temp_convert("xyz");
