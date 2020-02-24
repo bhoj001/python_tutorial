@@ -1,0 +1,35 @@
+<!doctype html>
+  <html>
+      <head>
+          <meta charset="utf-8">
+          <title>Basic Site Template</title>
+      </head>
+  
+      <body>
+          <h1>{{ title }}</h1>
+            <p>{{ cal }}</p>
+
+        <!-- if conditions-->
+        {% if age == "10" %}
+            some text
+        {% endif %}
+
+            <!-- Loops -->
+        <h2>Announcements</h2>
+      <table>
+          {% for announcement in announcements %}
+          <tr>
+              <td><strong>{{ announcement.date }}</strong></td>
+              <td>{{ announcement.announcement }}</td>
+          </tr>
+          
+          <tr>
+             <td><strong>anouncement list</strong></td>
+             <td>No Announcements</td>
+         </tr>
+         {% endfor %}
+     </table>
+
+
+     </body>
+</html>
