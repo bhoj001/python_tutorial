@@ -9,18 +9,18 @@ from django.views import generic
 def home(request):
     return HttpResponse("Hellow world")
 
-# rendering html document
-def article(request):
-    return render(request,"article/article.html",{})
-
-
 # rendering document with certian value
 def index(request):
     context={
         "name":"Ram",
-        "age": "10"
+        "age": 10
     }
     return render(request,"article/index.html",context)
+
+
+# contact page
+def contact(request):
+    return render(request,"article/contact.html",{})
 
 
 
