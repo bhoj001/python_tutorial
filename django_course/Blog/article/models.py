@@ -14,20 +14,17 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
-    # class Meta:
-    #     ordering = ['-created_on']
+    class Meta:
+        ordering = ['-created_on']
 
-    # def __str__(self):
-    #     return self.title
+    def __str__(self):
+        return self.title
 
+# Add new models
+class AskQuestion(models.Model):
+    title = models.CharField(max_length=40)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
 
-# class PostComment(models.Model):
-#     comment_content = models.TextField()
-#     associated_post = models.ForeignKey(Post,on_delete=models.CASCADE)
-#     commented_date = models.DateField(auto_now_add=True)
-
-#     class Meta:
-#         ordering = ['-commented_date']
-    
-#     def __str__(self):
-#         return self.comment_content
+    def __str__(self):
+        return self.title

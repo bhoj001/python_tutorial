@@ -5,15 +5,16 @@ from .views import (
     index,
     PostList,
     PostDetail,
+    AskQuestionView,
 )
 
 urlpatterns = [
-    # path('',home,name="home"),
-    
-    path('contact/',contact, name="contact"),
 
-    # path('index/',index, name="index"),
+    path('contact/',contact, name="contact"),
 
     path('', PostList.as_view(), name='article_list'),
     path('detail/<int:pk>/', PostDetail.as_view(), name='article_detail'),
+
+    path('ask-question/',AskQuestionView,name="AskQuestionView"),
+
 ]

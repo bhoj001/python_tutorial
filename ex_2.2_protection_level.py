@@ -3,10 +3,20 @@ class Car:
     door_number=4 # Public class variable
     def get_color(self): # public method
         return "Blue"
+    
+    # This  need to be called using obj.functionname
+    def display_door_number(self):
+        print("door number=",self.door_number)
+
+    # Sine no self , we call this using Class.FunctionName
+    def door_number_by_classname():
+        print("door=",Car.door_number)
 
 obj = Car()
 print(obj.door_number)
 print(obj.get_color())
+obj.display_door_number()
+Car.door_number_by_classname()
 
 
 # Protected and private:
@@ -31,8 +41,9 @@ class employee:
         self._salary=sal # protected attribute
         self._company = "Google Inc."
 
-e1=employee("Swati", 10000)
-print(e1._salary)
+e1=employee("Swati", 150000)
+print("salary=",e1._salary)
+
 # ----we can not do this because we have to define _name using constructor. 
 # print(employee._name)
 # AttributeError: type object 'employee' has no attribute '_company'
@@ -54,6 +65,7 @@ class employee2:
         print("company=",self.__company)
 
 
+
 e1=employee2("Bill",10000)
 # -------- cant do like this
 # print(e1.__salary) #AttributeError: 'employee2' object has no attribute '__salary'
@@ -69,3 +81,4 @@ e1.display_company()
 
 # However we can use name mangeling technique if we really want to access it
 print(e1._employee2__company)
+print(e1._employee2__name)
